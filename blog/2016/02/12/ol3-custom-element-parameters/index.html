@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Spaghetti Code</title>
+  <title>OL3 Custom Element: Parameters - Spaghetti Code</title>
   <meta name="author" content="Tim Hostetler">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://thostetler.github.io">
+  <link rel="canonical" href="http://thostetler.github.io/blog/2016/02/12/ol3-custom-element-parameters">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -104,15 +104,13 @@
 </nav>
   <div class="container">
     <div class="row-fluid">
-      <div class="span9">
-  
-  
-  
-    <article>
       
+<article class="hentry span9" role="article">
+
+  
   <header class="page-header">
     
-      <h1 class="entry-title"><a href="/blog/2016/02/12/ol3-custom-element-parameters/">OL3 Custom Element: Parameters</a></h1>
+      <h1 class="entry-title">OL3 Custom Element: Parameters</h1>
     
     
       <p class="meta">
@@ -128,7 +126,7 @@
   </header>
 
 
-  <div class="entry-content"><p>Now that we have our custom element created and the bindings are set up we can start to add in parameters to pass options to our new map.  Currently Knockout provides this utility for passing params to custom components: <code>&lt;component params="{...}"&gt;&lt;/component&gt;</code>.  This is fine, but it would be cool to provide our options through element attributes.</p>
+<div class="entry-content"><p>Now that we have our custom element created and the bindings are set up we can start to add in parameters to pass options to our new map.  Currently Knockout provides this utility for passing params to custom components: <code>&lt;component params="{...}"&gt;&lt;/component&gt;</code>.  This is fine, but it would be cool to provide our options through element attributes.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ol3map</span> <span class="na">params=</span><span class="s">&quot;center: [0, 0], zoom: 2&quot;</span><span class="nt">&gt;&lt;/ol3map&gt;</span>
@@ -524,227 +522,52 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 <iframe width="100%" height="600" src="//jsfiddle.net/timh06/ma5j990n/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header class="page-header">
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tim Hostetler</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-02-12T22:28:24-05:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:28 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/knockoutjs/'>knockoutjs</a>, <a class='category' href='/blog/categories/ol3/'>ol3,</a>
+  
+</span>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2016/02/07/first-ol3-map/">OL3 Element Using KnockoutJs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-02-07T23:25:10-05:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:25 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><iframe
-  width="100%"
-  height="300"
-  src="//jsfiddle.net/timh06/8030x8ms/embedded/result,js,html/"
-  allowfullscreen="allowfullscreen"
-  frameborder="0"
-></iframe>
-
-
-<p>If you&rsquo;ve used something like polymer or knockout before, you&rsquo;ve seen HTML5
-custom components, they are really cool.  The goal here is to create something
-like this in your markup, for this we&rsquo;re going to use Knockout custom
-components:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ol3map&gt;&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Then use the <code>KnockoutJs</code> simple custom component system to create the OL3
-map.  If you haven&rsquo;t done so already, take a look over the custom component
-section on <a href="http://knockoutjs.com/documentation%0A/component-overview.html">Knockout Components</a>.  Let&rsquo;s start by creating the component
-registration:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3map&#39;</span><span class="p">,</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">return</span> <span class="k">new</span> <span class="nx">MapViewModel</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">.</span><span class="nx">element</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;!-- --&gt;&#39;</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>We want to then create our new <code>MapViewModel</code> object, this will be the context
-that will be bound to the template we provide.  This is important, since OL3
-won&rsquo;t initialize on hidden elements, we&rsquo;ll have to do some additional work to
-get it to show up.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">MapViewModel</span> <span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">Map</span><span class="p">({</span>
-</span><span class='line'>    <span class="nx">view</span><span class="o">:</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">View</span><span class="p">({</span>
-</span><span class='line'>      <span class="nx">center</span><span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-</span><span class='line'>      <span class="nx">zoom</span><span class="o">:</span> <span class="mi">2</span>
-</span><span class='line'>    <span class="p">})</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>In the <code>MapViewModel</code> we want to create a new <code>ol.Map</code> object with <em>no</em> target
-set yet.  We&rsquo;ll do that in a custom binding handler that will do the job of
-connecting the two.</p>
-
-<p>Now let&rsquo;s set up the custom binding handler:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">bindingHandlers</span><span class="p">.</span><span class="nx">__map</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">valueAccessor</span><span class="p">,</span> <span class="nx">allBindings</span><span class="p">,</span> <span class="nx">viewModel</span><span class="p">,</span> <span class="nx">bindingContext</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">viewModel</span><span class="p">.</span><span class="nx">map</span><span class="p">.</span><span class="nx">setTarget</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This binding handler will allow us to do something like
-<code>&lt;div data-bind="__map"&gt;&lt;/div&gt;</code> and get back the element and the viewmodel.
-Once it&rsquo;s called we know the element exists, so we can attach our map at that
-point. Also, prepending with <code>__</code> helps to keep us from possibly overwriting
-other handlers.  Finally, let&rsquo;s change our template to include the new
-binding.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3map&#39;</span><span class="p">,</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">return</span> <span class="k">new</span> <span class="nx">MapViewModel</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">.</span><span class="nx">element</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;div data-bind=&quot;__map&quot;&gt;&lt;/div&gt;&#39;</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>That&rsquo;s it! now when we place a <code>&lt;ol3map&gt;&lt;/ol3map&gt;</code> tag somewhere in our page
-Knockout will call our viewmodel code, which will create the object containing
-that <code>map</code> property.  When the template is applied, it is bound to the new
-viewmodel context which should be something like <code>{ map: ol.Map(...) }</code>, then
-the <code>__map</code> binding handler is called with this object passed as the
-<code>viewmodel</code> param.  Finally, we call <code>setTarget(element)</code> on the map object we
-got from the passed in viewmodel and the map gets initialized.  The final code
-looks like this:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">bindingHandlers</span><span class="p">.</span><span class="nx">__map</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">valueAccessor</span><span class="p">,</span> <span class="nx">allBindings</span><span class="p">,</span> <span class="nx">viewModel</span><span class="p">,</span> <span class="nx">bindingContext</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">viewModel</span><span class="p">.</span><span class="nx">map</span><span class="p">.</span><span class="nx">setTarget</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">};</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">function</span> <span class="nx">MapViewModel</span> <span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">Map</span><span class="p">({</span>
-</span><span class='line'>    <span class="nx">view</span><span class="o">:</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">View</span><span class="p">({</span>
-</span><span class='line'>      <span class="nx">center</span><span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-</span><span class='line'>      <span class="nx">zoom</span><span class="o">:</span> <span class="mi">2</span>
-</span><span class='line'>    <span class="p">}),</span>
-</span><span class='line'>    <span class="nx">layers</span><span class="o">:</span> <span class="p">[</span>
-</span><span class='line'>      <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">layer</span><span class="p">.</span><span class="nx">Tile</span><span class="p">({</span> <span class="nx">source</span><span class="o">:</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="p">.</span><span class="nx">OSM</span><span class="p">()</span> <span class="p">})</span>
-</span><span class='line'>    <span class="p">]</span>
-</span><span class='line'>  <span class="p">});</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Create the custom component</span>
-</span><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3map&#39;</span><span class="p">,</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">return</span> <span class="k">new</span> <span class="nx">MapViewModel</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">.</span><span class="nx">element</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;div data-bind=&quot;__map&quot;&gt;&lt;/div&gt;&#39;</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">applyBindings</span><span class="p">({});</span>
-</span></code></pre></td></tr></table></div></figure>
-
+      <div class="sharing">
+  
+  
+  
 </div>
-  
-  
 
+    
+    
+    <ul class="pager">
+      
+      <li class="previous"><a class="basic-alignment left"
+        href="/blog/2016/02/07/first-ol3-map/" title="Previous Post:
+        OL3 Element Using KnockoutJs">&laquo; OL3 Element Using KnockoutJs</a></li>
+      
+      <li><a href="/blog/archives">Blog Archives</a></li>
+      
+    </ul>
+  </footer>
+</article>
 
-    </article>
-  
-  <ul class="pager">
-    
-    <li><a href="/blog/archives">Blog Archives</a></li>
-    
-  </ul>
-</div>
 <aside class="sidebar-nav span3">
   
     <section class="well">
@@ -789,6 +612,7 @@ looks like this:</p>
 
   
 </aside>
+
 
     </div>
   </div>

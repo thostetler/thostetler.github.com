@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://thostetler.github.io/blog/2016/02/12/ol3-custom-element-parameters/</loc>
+<lastmod>2016-02-12T22:28:24-05:00</lastmod>
+</url>
+<url>
+<loc>http://thostetler.github.io/blog/2016/02/07/first-ol3-map/</loc>
+<lastmod>2016-02-07T23:25:10-05:00</lastmod>
+</url>
+<url>
+<loc>http://thostetler.github.io/blog/archives/</loc>
+</url>
+<url>
+<loc>http://thostetler.github.io/</loc>
+</url>
+<url>
+<loc>http://thostetler.github.io/blog/categories/ol3/</loc>
+</url>
+<url>
+<loc>http://thostetler.github.io/blog/categories/knockoutjs/</loc>
+</url>
+</urlset>

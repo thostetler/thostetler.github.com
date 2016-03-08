@@ -1,150 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Spaghetti Code</title>
-  <meta name="author" content="Tim Hostetler">
-
-  
-  <meta name="description" content="">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://thostetler.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <style type="text/css">
-    body {
-      padding-bottom: 40px;
-    }
-    h1 {
-      margin-bottom: 15px;
-    }
-    img {
-      max-width: 100%;
-    }
-    .sharing, .meta, .pager {
-      margin: 20px 0px 20px 0px;
-    }
-    .page-footer p {
-      text-align: center;
-    }
-  </style>
-  <script src="/javascripts/libs/jquery.js"></script>
-  <script src="/javascripts/libs/modernizr-2.0.js"></script>
-  <script src="/javascripts/libs/bootstrap.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Spaghetti Code" type="application/atom+xml">
-  
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-74839061-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <nav role="navigation"><div class="navbar navbar-inverse">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-
-      <a class="brand" href="/">
-        <img alt="Brand" src="/images/spaghetti.png">
-        Spaghetti Code
-      </a>
-
-      <div class="nav-collapse">
-        <ul class="nav">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-
-        <ul class="nav pull-right" data-subscription="rss">
-          <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-          
-        </ul>
-
-        
-          <form class="pull-right navbar-search" action="https://www.google.com/search" method="get">
-            <fieldset role="search">
-              <input type="hidden" name="q" value="site:thostetler.github.io" />
-              <input class="search-query" type="text" name="q" results="0" placeholder="Search"/>
-            </fieldset>
-          </form>
-        
-      </div>
-    </div>
-  </div>
-</div>
-</nav>
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span9">
-  
-  
-  
-    <article>
-      
-  <header class="page-header">
+  <title><![CDATA[Category: knockoutjs | Spaghetti Code]]></title>
+  <link href="http://thostetler.github.io/blog/categories/knockoutjs/atom.xml" rel="self"/>
+  <link href="http://thostetler.github.io/"/>
+  <updated>2016-03-08T16:50:01-05:00</updated>
+  <id>http://thostetler.github.io/</id>
+  <author>
+    <name><![CDATA[Tim Hostetler]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2016/02/12/ol3-custom-element-parameters/">OL3 Custom Element: Parameters</a></h1>
-    
-    
-      <p class="meta">
-        
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[OL3 Custom Element: Parameters]]></title>
+    <link href="http://thostetler.github.io/blog/2016/02/12/ol3-custom-element-parameters/"/>
+    <updated>2016-02-12T22:28:24-05:00</updated>
+    <id>http://thostetler.github.io/blog/2016/02/12/ol3-custom-element-parameters</id>
+    <content type="html"><![CDATA[<p>Now that we have our custom element created and the bindings are set up we can start to add in parameters to pass options to our new map.  Currently Knockout provides this utility for passing params to custom components: <code>&lt;component params="{...}"&gt;&lt;/component&gt;</code>.  This is fine, but it would be cool to provide our options through element attributes.</p>
 
-
-
-<time class='entry-date' datetime='2016-02-12T22:28:24-05:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:28 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Now that we have our custom element created and the bindings are set up we can start to add in parameters to pass options to our new map.  Currently Knockout provides this utility for passing params to custom components: <code>&lt;component params="{...}"&gt;&lt;/component&gt;</code>.  This is fine, but it would be cool to provide our options through element attributes.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ol3map</span> <span class="na">params=</span><span class="s">&quot;center: [0, 0], zoom: 2&quot;</span><span class="nt">&gt;&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Params are certainly useful, but I think something like this seems more intuitive:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ol3map</span> <span class="na">center=</span><span class="s">&quot;[0, 0]&quot;</span> <span class="na">zoom=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>We&rsquo;ll want to add in support for these attributes and pass these options along to our map.  This should be easy enough to do.  Just parse out these attributes and pass the options.  Here is a simple example of an attribute parser with default options:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -169,14 +57,14 @@
 </span><span class='line'>    <span class="k">delete</span> <span class="nx">options</span><span class="p">.</span><span class="nx">$raw</span><span class="p">;</span>
 </span><span class='line'>  <span class="p">}</span>
 </span><span class='line'>  <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">attributes</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="c1">// Skip params attribute </span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span> <span class="o">===</span> <span class="s1">&#39;params&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c1">// Skip params attribute</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span> <span class="o">===</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">params</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;)</span> <span class="p">{</span>
 </span><span class='line'>      <span class="k">return</span><span class="p">;</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'>    <span class="kd">var</span> <span class="nx">v</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^\(/</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^(/</span><span class="p">))</span> <span class="p">{</span>
 </span><span class='line'>      <span class="nx">options</span><span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span><span class="p">]</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nx">v</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^[\[\{\d]/</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^[[{\d]/</span><span class="p">))</span> <span class="p">{</span>
 </span><span class='line'>      <span class="nx">options</span><span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span><span class="p">]</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">v</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 </span><span class='line'>      <span class="nx">options</span><span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span><span class="p">]</span> <span class="o">=</span> <span class="nx">v</span><span class="p">;</span>
@@ -184,8 +72,7 @@
 </span><span class='line'>  <span class="p">});</span>
 </span><span class='line'>  <span class="k">return</span> <span class="nx">options</span><span class="p">;</span>
 </span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Since <code>element.attributes</code> is actually a
 <a href="//developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap">NamedNodeMap</a> which,
@@ -199,7 +86,7 @@ quotes are stripped and the flat string is sent to <code>JSON.parse</code> and i
 know what to do with it yeilding this helpful message: <code>Uncaught SyntaxError:
 Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for example:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -207,20 +94,19 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// For now I am just eval()-ing things that start with &quot;(&quot;</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// For now I am just eval()-ing things that start with &amp;ldquo;(&amp;rdquo;</span>
 </span><span class='line'><span class="c1">// definetly bad practice, but for this example it should be fine</span>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^\(/</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^(/</span><span class="p">))</span> <span class="p">{</span>
 </span><span class='line'>  <span class="c1">// eval() the result</span>
-</span><span class='line'>  <span class="c1">// this way (Infinity), for example, doesn&#39;t end up as a string &quot;(Infinity)&quot;</span>
+</span><span class='line'>  <span class="c1">// this way (Infinity), for example, doesn&amp;rsquo;t end up as a string &amp;ldquo;(Infinity)&amp;rdquo;</span>
 </span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nx">v</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^[\[\{\d]/</span><span class="p">))</span>
+</span><span class='line'><span class="nx">v</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^[[{\d]/</span><span class="p">))</span>
 </span><span class='line'><span class="c1">// Match on arrays, objects, or numbers</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Okay! so now we can do something like this:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -236,8 +122,7 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>  <span class="na">rotation=</span><span class="s">&quot;90&quot;</span>
 </span><span class='line'>  <span class="na">sourceProjection=</span><span class="s">&quot;EPSG:4326</span>
 </span><span class='line'><span class="s">&quot;</span><span class="nt">&gt;&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>and everything should work fine.  Here you can see it working great with our new customizable map element:</p>
 
@@ -246,7 +131,7 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 
 <p>Now, what about one of the most important features of maps: layers.  We certainly want to be able to give the ability to add layers, and something like this isn&rsquo;t a terrible idea:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -254,20 +139,21 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ol3map</span>
-</span><span class='line'>  <span class="na">center=</span><span class="s">&quot;[-79, 40]&quot;</span>
-</span><span class='line'>  <span class="na">rotation=</span><span class="s">&quot;90&quot;</span>
-</span><span class='line'>  <span class="na">layers=</span><span class="s">&quot;[</span>
-</span><span class='line'><span class="s">    { type: &#39;Tile&#39;, title: &#39;Base Layer&#39;, source: &#39;OSM&#39; },</span>
-</span><span class='line'><span class="s">    { type: &#39;Vector&#39;, title: &#39;Feature Layer&#39;, source: &#39;myLayers&#39; }</span>
-</span><span class='line'><span class="s">  ]&quot;</span>
-</span><span class='line'><span class="nt">&gt;&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>ol3map
+</span><span class='line'>  center=<span class="ni">&amp;ldquo;</span>[-79, 40]<span class="ni">&amp;rdquo;</span>
+</span><span class='line'>  rotation=<span class="ni">&amp;ldquo;</span>90<span class="ni">&amp;rdquo;</span>
+</span><span class='line'>  layers=<span class="ni">&amp;ldquo;</span>[
+</span><span class='line'>    { type: <span class="ni">&amp;lsquo;</span>Tile<span class="ni">&amp;rsquo;</span>, title: <span class="ni">&amp;lsquo;</span>Base Layer<span class="ni">&amp;rsquo;</span>, source: <span class="ni">&amp;lsquo;</span>OSM<span class="ni">&amp;rsquo;</span> },
+</span><span class='line'>    { type: <span class="ni">&amp;lsquo;</span>Vector<span class="ni">&amp;rsquo;</span>, title: <span class="ni">&amp;lsquo;</span>Feature Layer<span class="ni">&amp;rsquo;</span>, source: <span class="ni">&amp;lsquo;</span>myLayers<span class="ni">&amp;rsquo;</span> }
+</span><span class='line'>  ]<span class="ni">&amp;rdquo;</span><span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;blockquote&gt;&lt;p&gt;&lt;/ol3map&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p></blockquote>
 
 <p>But I think it makes a lot of sense to have these layers be represented visually in the markup by full sub-components under the main map, for example:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -275,14 +161,13 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>  <span class="nt">&lt;ol3layer</span> <span class="na">type=</span><span class="s">&quot;Tile&quot;</span> <span class="na">title=</span><span class="s">&quot;Base Layer&quot;</span> <span class="na">source=</span><span class="s">&quot;OSM&quot;</span><span class="nt">&gt;&lt;/ol3layer&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;ol3layer</span> <span class="na">type=</span><span class="s">&quot;Tile&quot;</span> <span class="na">title=</span><span class="s">&quot;Feature Layer&quot;</span> <span class="na">source=</span><span class="s">&quot;myLayers&quot;</span><span class="nt">&gt;&lt;/ol3layer&gt;</span>
 </span><span class='line'><span class="nt">&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>This makes our code a little bit more complicated though now as we are going to have to figure out how to handle bindings on the child elements.  The simple part, however, is registering the component - we can do that the same way we made the <code>&lt;ol3map&gt;</code> element.  Let&rsquo;s take a look at the <code>componentInfo.templateNodes</code> property, this is just DOM nodes that Knockout found between our custom component tags which it passes to us, all we have to do is place them back into the DOM and they&rsquo;ll be bound by Knockout.  Which means that if we have a custom component inside of our custom component we can get it to bind as well.  The simplest way to do this, I&rsquo;ve found, is to just use the template nodes directly in the binding handler.  For example:</p>
 
 <h2>Create Custom Binding (Root)</h2>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -294,14 +179,13 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>        <span class="nx">vm</span><span class="p">.</span><span class="nx">viewModel</span><span class="p">.</span><span class="nx">map</span><span class="p">.</span><span class="nx">setTarget</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>When we get passed the template nodes, just fill the html back in with the nodes, this will make Knockout rebind them.  We can then do any additional work here.</p>
 
 <h2>Create Custom Component (Root)</h2>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -312,7 +196,7 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3map&#39;</span><span class="p">,</span> <span class="p">{</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">ol3map</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span>
 </span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>      <span class="k">return</span> <span class="p">{</span>
@@ -321,10 +205,9 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>      <span class="p">};</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;div data-bind=&quot;__map&quot;&gt;&lt;/div&gt;&#39;</span>
+</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">data</span><span class="o">-</span><span class="nx">bind</span><span class="o">=</span><span class="s2">&quot;__map&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;&amp;rsquo;</span>
 </span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Return an object containing the <code>viewmodel</code> and the <code>templateNodes</code>, then make sure the template has custom binding handler being called.</p>
 
@@ -332,7 +215,7 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 
 <h2>Create Custom Binding (Child)</h2>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -346,14 +229,13 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>        <span class="nx">map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">vm</span><span class="p">.</span><span class="nx">viewModel</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Same thing as the <code>root</code>, the only difference is that if you need access to the parent (<code>root</code>) viewmodel, we can do that through the <code>context.$parent</code> property.  Then it&rsquo;s pretty simple really to do our hookup, also notice we&rsquo;re passing our <code>templateNodes</code> through in case we have more child components.</p>
 
 <h2>Create Custom Component (Child)</h2>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -364,7 +246,7 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3layer&#39;</span><span class="p">,</span> <span class="p">{</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">ol3layer</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span>
 </span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>      <span class="k">return</span> <span class="p">{</span>
@@ -373,25 +255,23 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>      <span class="p">};</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;div data-bind=&quot;__layer&quot;&gt;&lt;/div&gt;&#39;</span>
+</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">data</span><span class="o">-</span><span class="nx">bind</span><span class="o">=</span><span class="s2">&quot;__layer&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;&amp;rsquo;</span>
 </span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Now we should be able to do something like this:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ol3map</span> <span class="na">center=</span><span class="s">&quot;[-79, 40]&quot;</span> <span class="na">zoom=</span><span class="s">&quot;12&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;ol3layer</span> <span class="na">title=</span><span class="s">&quot;Base Layer&quot;</span> <span class="na">source=</span><span class="s">&quot;OSM&quot;</span><span class="nt">&gt;&lt;/ol3layer&gt;</span>
 </span><span class='line'><span class="nt">&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>That&rsquo;s great, but what about the case where we would like to pass options to that source.  Could use something like <code>sourceOptions</code>, but that would break up the clean look of these attributes, so let&rsquo;s keep digging deeper.</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -401,12 +281,11 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>     <span class="nt">&lt;ol3source</span> <span class="na">source=</span><span class="s">&quot;OSM&quot;</span><span class="nt">&gt;&lt;/ol3source&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/ol3layer&gt;</span>
 </span><span class='line'><span class="nt">&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>I think this is a clean way of visually representing our map.  By the way, the viewmodels for each of these are relatively simple, for this demo I&rsquo;m really just passing things right through to OL3.  For an example of this, check out the <code>SourceViewModel</code>:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -418,22 +297,21 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 <span class='line-number'>10</span>
 </pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">SourceViewModel</span> <span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>  <span class="nx">options</span> <span class="o">=</span> <span class="nx">ko</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-</span><span class='line'>    <span class="nx">source</span><span class="o">:</span> <span class="s1">&#39;OSM&#39;</span>
-</span><span class='line'>  <span class="p">},</span> <span class="nx">parseOptions</span><span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">element</span><span class="p">));</span>
+</span><span class='line'>    <span class="nx">source</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">OSM</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">},</span> <span class="nx">parseOptions</span><span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">element</span><span class="p">));</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">source</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">source</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">delete</span> <span class="nx">options</span><span class="p">.</span><span class="nx">source</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="kd">var</span> <span class="nx">source</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">source</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">delete</span> <span class="nx">options</span><span class="p">.</span><span class="nx">source</span><span class="p">;</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'>  <span class="k">return</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="p">[</span><span class="nx">source</span><span class="p">](</span><span class="nx">options</span><span class="p">);</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>  <span class="k">return</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;options&quot;</span><span class="o">&gt;</span><span class="nx">source</span><span class="o">&lt;</span><span class="err">/a&gt;;</span>
 </span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>That <code>parseOptions</code> part takes that <code>options</code> object and adds in any of the attributes it found on the element passed in.  Then we just create a new source object, passing in options - pretty simple.</p>
 
 <p>The final thing to worry about is <code>Features</code>, these are part of <code>source</code>, and more specifically, <code>ol.source.Vector</code>.  So we are looking for something like this:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -447,12 +325,11 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>    <span class="nt">&lt;ol3feature</span> <span class="na">geometry=</span><span class="s">&quot;Point&quot;</span> <span class="na">location=</span><span class="s">&quot;[-79, 40.005]&quot;</span><span class="nt">&gt;&lt;/ol3feature&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/ol3source&gt;</span>
 </span><span class='line'><span class="nt">&lt;/ol3layer&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>This is done the same way as the others, just create a custom component for the new <code>ol3feature</code> tag:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -460,20 +337,19 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3feature&#39;</span><span class="p">,</span> <span class="p">{</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">ol3feature</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span>
 </span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>      <span class="k">return</span> <span class="k">new</span> <span class="nx">FeatureViewModel</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">.</span><span class="nx">element</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;div data-bind=&quot;__feature&quot;&gt;&lt;/div&gt;&#39;</span>
+</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">data</span><span class="o">-</span><span class="nx">bind</span><span class="o">=</span><span class="s2">&quot;__feature&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;&amp;rsquo;</span>
 </span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Add the feature to the parent source from within the binding handler and we&rsquo;re good:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -485,12 +361,11 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>        <span class="nx">source</span><span class="p">.</span><span class="nx">addFeature</span><span class="p">(</span><span class="nx">vm</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Cool! now the final markup looks like this:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -514,8 +389,7 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 </span><span class='line'>    <span class="nt">&lt;/ol3source&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/ol3layer&gt;</span>
 </span><span class='line'><span class="nt">&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>I think this is a nice clear concise way of seeing the structure of the map, the layers will be added top to bottom and all the options are right there in the attributes.  Obviously this is incomplete, we don&rsquo;t have anyway to really pass styling to the features or layer currently.  But this works great when you want to quickly make some maps with basic settings.</p>
 
@@ -523,35 +397,15 @@ Unexpected token E</code>.  So let&rsquo;s look out for parseable strings, for e
 
 <iframe width="100%" height="600" src="//jsfiddle.net/timh06/ma5j990n/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header class="page-header">
-    
-      <h1 class="entry-title"><a href="/blog/2016/02/07/first-ol3-map/">OL3 Element Using KnockoutJs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-02-07T23:25:10-05:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:25 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><iframe
+  <entry>
+    <title type="html"><![CDATA[OL3 Element Using KnockoutJs]]></title>
+    <link href="http://thostetler.github.io/blog/2016/02/07/first-ol3-map/"/>
+    <updated>2016-02-07T23:25:10-05:00</updated>
+    <id>http://thostetler.github.io/blog/2016/02/07/first-ol3-map</id>
+    <content type="html"><![CDATA[<iframe
   width="100%"
   height="300"
   src="//jsfiddle.net/timh06/8030x8ms/embedded/result,js,html/"
@@ -565,17 +419,16 @@ custom components, they are really cool.  The goal here is to create something
 like this in your markup, for this we&rsquo;re going to use Knockout custom
 components:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;ol3map&gt;&lt;/ol3map&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Then use the <code>KnockoutJs</code> simple custom component system to create the OL3
 map.  If you haven&rsquo;t done so already, take a look over the custom component
 section on <a href="http://knockoutjs.com/documentation%0A/component-overview.html">Knockout Components</a>.  Let&rsquo;s start by creating the component
 registration:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -583,23 +436,22 @@ registration:</p>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3map&#39;</span><span class="p">,</span> <span class="p">{</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">ol3map</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span>
 </span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>      <span class="k">return</span> <span class="k">new</span> <span class="nx">MapViewModel</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">.</span><span class="nx">element</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;!-- --&gt;&#39;</span>
+</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="c">&lt;!--</span> <span class="o">--&gt;&amp;</span><span class="nx">rsquo</span><span class="p">;</span>
 </span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>We want to then create our new <code>MapViewModel</code> object, this will be the context
 that will be bound to the template we provide.  This is important, since OL3
 won&rsquo;t initialize on hidden elements, we&rsquo;ll have to do some additional work to
 get it to show up.</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -615,8 +467,7 @@ get it to show up.</p>
 </span><span class='line'>    <span class="p">})</span>
 </span><span class='line'>  <span class="p">});</span>
 </span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>In the <code>MapViewModel</code> we want to create a new <code>ol.Map</code> object with <em>no</em> target
 set yet.  We&rsquo;ll do that in a custom binding handler that will do the job of
@@ -624,7 +475,7 @@ connecting the two.</p>
 
 <p>Now let&rsquo;s set up the custom binding handler:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -634,8 +485,7 @@ connecting the two.</p>
 </span><span class='line'>        <span class="nx">viewModel</span><span class="p">.</span><span class="nx">map</span><span class="p">.</span><span class="nx">setTarget</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>This binding handler will allow us to do something like
 <code>&lt;div data-bind="__map"&gt;&lt;/div&gt;</code> and get back the element and the viewmodel.
@@ -644,7 +494,7 @@ point. Also, prepending with <code>__</code> helps to keep us from possibly over
 other handlers.  Finally, let&rsquo;s change our template to include the new
 binding.</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -652,16 +502,15 @@ binding.</p>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3map&#39;</span><span class="p">,</span> <span class="p">{</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">ol3map</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span>
 </span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>      <span class="k">return</span> <span class="k">new</span> <span class="nx">MapViewModel</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">.</span><span class="nx">element</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;div data-bind=&quot;__map&quot;&gt;&lt;/div&gt;&#39;</span>
+</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">data</span><span class="o">-</span><span class="nx">bind</span><span class="o">=</span><span class="s2">&quot;__map&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;&amp;rsquo;</span>
 </span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>That&rsquo;s it! now when we place a <code>&lt;ol3map&gt;&lt;/ol3map&gt;</code> tag somewhere in our page
 Knockout will call our viewmodel code, which will create the object containing
@@ -672,7 +521,7 @@ the <code>__map</code> binding handler is called with this object passed as the
 got from the passed in viewmodel and the map gets initialized.  The final code
 looks like this:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -705,9 +554,9 @@ looks like this:</p>
 </span><span class='line'>    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">valueAccessor</span><span class="p">,</span> <span class="nx">allBindings</span><span class="p">,</span> <span class="nx">viewModel</span><span class="p">,</span> <span class="nx">bindingContext</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>        <span class="nx">viewModel</span><span class="p">.</span><span class="nx">map</span><span class="p">.</span><span class="nx">setTarget</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">};</span>
+</span><span class='line'><span class="p">};</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="kd">function</span> <span class="nx">MapViewModel</span> <span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="kd">function</span> <span class="nx">MapViewModel</span> <span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">Map</span><span class="p">({</span>
 </span><span class='line'>    <span class="nx">view</span><span class="o">:</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">View</span><span class="p">({</span>
 </span><span class='line'>      <span class="nx">center</span><span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
@@ -717,102 +566,21 @@ looks like this:</p>
 </span><span class='line'>      <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">layer</span><span class="p">.</span><span class="nx">Tile</span><span class="p">({</span> <span class="nx">source</span><span class="o">:</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">source</span><span class="p">.</span><span class="nx">OSM</span><span class="p">()</span> <span class="p">})</span>
 </span><span class='line'>    <span class="p">]</span>
 </span><span class='line'>  <span class="p">});</span>
-</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="c1">// Create the custom component</span>
-</span><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;ol3map&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Create the custom component</span>
+</span><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">components</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">ol3map</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span>
 </span><span class='line'>  <span class="nx">viewModel</span><span class="o">:</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">createViewModel</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>      <span class="k">return</span> <span class="k">new</span> <span class="nx">MapViewModel</span><span class="p">(</span><span class="nx">params</span><span class="p">,</span> <span class="nx">componentInfo</span><span class="p">.</span><span class="nx">element</span><span class="p">);</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;div data-bind=&quot;__map&quot;&gt;&lt;/div&gt;&#39;</span>
-</span><span class='line'><span class="p">});</span>
+</span><span class='line'>  <span class="nx">template</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">data</span><span class="o">-</span><span class="nx">bind</span><span class="o">=</span><span class="s2">&quot;__map&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;&amp;rsquo;</span>
+</span><span class='line'><span class="p">});</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">ko</span><span class="p">.</span><span class="nx">applyBindings</span><span class="p">({});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-</div>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">ko</span><span class="p">.</span><span class="nx">applyBindings</span><span class="p">({});</span>
+</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <ul class="pager">
-    
-    <li><a href="/blog/archives">Blog Archives</a></li>
-    
-  </ul>
-</div>
-<aside class="sidebar-nav span3">
-  
-    <section class="well">
-  <ul id="recent_posts" class="nav nav-list">
-    <li class="nav-header">Recent Posts</li>
-    
-      <li class="post">
-        <a href="/blog/2016/02/12/ol3-custom-element-parameters/">OL3 Custom Element: Parameters</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/02/07/first-ol3-map/">OL3 Element Using KnockoutJs</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section class="well">
-  <ul id="gh_repos" class="nav">
-    <li class="nav-header">GitHub Repos</li>
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-  <a href="https://github.com/thostetler">@thostetler</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        github.showRepos({
-            user: 'thostetler',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/asides/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo" class="page-footer"><hr>
-<p>
-  Copyright &copy; 2016 - Tim Hostetler -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-<p>
-  Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+</feed>
